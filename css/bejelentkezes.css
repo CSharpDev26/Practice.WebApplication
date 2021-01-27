@@ -1,0 +1,12 @@
+@import "main.css";
+form{
+background-color: white;
+margin-right: 600px;
+margin-left: 600px;
+margin-top: 50px;
+display: block;
+text-align: center;
+}
+a{
+    color: orangered;
+}

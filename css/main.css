@@ -1,31 +1,35 @@
-body {background-color : rgb(78, 207, 247);
-    font-family: "Times New Roman";
+body {background-color : rgb(0, 0, 0);
+    font-family: cursive, 'Times New Roman', serif;
     margin: 0;
     padding: 0;
+    color:orangered;
 }
 /* cim */
 #focim{
      margin: 0;
      padding: 0;
-     background-color : red;
+     background-color : rgb(197, 197, 197);
      text-align: center;
      font-size: 30px;
+     color: orangered;
 }
 #alcim {
     margin: 0;
     padding: 0;
-    background-color : red;
+    background-color : rgb(197, 197, 197);
     text-align: center;
     font-size: 18px;
-    
+    color: orangered;
+    border-bottom: black;
+    border-style: none none solid none;
 } 
 /* menubar */
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 1px 0 0 0 ;
     overflow: hidden;
-    background-color: rgb(24, 190, 66);
+    background-color: rgb(197, 197, 197);
   }
   
   .menuelem {
@@ -34,53 +38,86 @@ ul {
   
   .menuelem a {
     display: block;
-    color: rgb(236, 8, 8);
+    color: orangered;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-radius: 20px;
   }
   
   .menuelem a:hover {
-    background-color: #111;
+    background-color: rgb(0, 0, 0);
   }
   #aktiv-oldal{
-    background-color: #090cf0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
   }
 .legrodulo{
 position: relative;
 display: inline-block;
 }
 .legordulo-gomb{
-    background-color: rgb(24, 190, 66);
-    color: rgb(236, 8, 8);
+    background-color: rgb(197, 197, 197);
+    color: orangered;
     padding: 14px 16px;
     border: none;
+    text-align: center;
+    font-family: cursive, 'Times New Roman', serif;
+    font-size: 12pt;
+    border-radius: 20px;
 }
 .legordulo-tartalom-kategoriak{
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: black;
     min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
     z-index: 1;
+    border-radius: 20px;
 }
 .legordulo-tartalom-kategoriak a{
-  background-color: rgb(24, 190, 66);
-  color: rgb(236, 8, 8);
+  background-color: rgb(197, 197, 197);
+  color: orangered;
   padding: 14px 16px;
   display: block;
 }
 .legordulo-tartalom-kategoriak a:hover{
-    background-color: #111;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
 }
 .legordulo:hover .legordulo-tartalom-kategoriak {
     display: block;
 }
 .legordulo:hover .legordulo-gomb {
-    background-color: #111;
+    background-color: rgb(0, 0, 0);
 }
 .menu-egyben{
     position: fixed;
     top: 0;
     width: 100%;
+}
+#kosar{
+float: right;
+margin: 0 0 0 0;
+padding-top: 5px;
+margin-right: 200px;
+}
+#bejelentkezes{
+  float: right;
+  margin: 0 15px 0 0;
+  padding-top: 5px;
+  /* display: none; */
+}
+#kijelentkezes{
+margin-right: 15px;
+padding-top: 5px;
+float: right;
+display: none;
+}
+#udv{
+  float: right;
+  padding-top: 10px;
+  text-align: center;
+  margin-right: 150px;
+  display: none;
 }

@@ -1,0 +1,13 @@
+@import "main.css";
+h3{
+    margin-top: 150px;
+    float: inline-end;
+    color: orangered;
+    text-align: center;
+}
+p{
+    text-align: center;
+    float: inline-end;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:orangered;
+}

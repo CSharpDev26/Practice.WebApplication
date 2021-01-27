@@ -1,9 +1,16 @@
 @import "main.css";
-p {
+p{
 text-align: center;
 margin-top: 150px;
 margin-left: 700px;
 margin-right: 700px;
 font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 color:orangered;
+}
+textarea{
+    
+    margin-left: 710px;
+    margin-right: 700px;
+    background-color: rgb(197, 197, 197);
+    color: orangered;
 }
