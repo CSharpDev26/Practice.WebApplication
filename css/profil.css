@@ -1,0 +1,12 @@
+@import url("main.css");
+p{
+	margin-top: 150px;
+	margin-left: 900px;
+	font-size:20pt;
+	
+}
+table{
+	background-color: white;
+	margin-left: 650px;
+	margin-top: 40px;
+}

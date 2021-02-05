@@ -106,7 +106,6 @@ margin-right: 200px;
   float: right;
   margin: 0 15px 0 0;
   padding-top: 5px;
-  /* display: none; */
 }
 #kijelentkezes{
 margin-right: 15px;
@@ -118,6 +117,29 @@ display: none;
   float: right;
   padding-top: 10px;
   text-align: center;
-  margin-right: 150px;
+  margin-right: 80px;
   display: none;
+}
+#profil{
+display: none;
+float: right;
+ padding-top: 10px;
+ text-align: center;
+ margin-right: 30px;
+}
+#rendelesek{
+display: none;
+float: right;
+ padding-top: 10px;
+ text-align: center;
+ margin-right: 30px;
+}
+#termekv{
+display: none;
+float: right;
+ padding-top: 10px;
+ text-align: center;
+ margin-right: 30px;
+}
+#mlogo{
 }

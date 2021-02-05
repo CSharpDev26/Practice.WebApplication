@@ -1,4 +1,4 @@
-@import "main.css";
+@import url("main.css");
 h3{
     margin-top: 150px;
     float: inline-end;
@@ -10,4 +10,10 @@ p{
     float: inline-end;
     font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:orangered;
+}
+#akcioskep{
+	
+	height: 50px;
+	width: 100px;
+	border-radius: 8px;
 }

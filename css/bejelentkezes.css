@@ -1,12 +1,25 @@
 @import "main.css";
 form{
 background-color: white;
-margin-right: 600px;
+
+/* margin-right: 600px;
 margin-left: 600px;
-margin-top: 50px;
-display: block;
-text-align: center;
+margin-top: 100px; */
+/* padding-top: 5%; */
+display: inline-block;;
+position: absolute;
+top:50%;
+left: 40%; 
+padding-left: 100px;
+padding-right: 100px;
+padding-top: 40px;
+padding-bottom: 40px;
 }
-a{
+#reg{
     color: orangered;
+}
+#sikertelen{
+	position: absolute;
+top:50%;
+left: 40%;
 }

@@ -1,0 +1,22 @@
+@import "main.css";
+p{
+    margin-top: 10%;
+    margin-left: 47%;
+}
+#folyt{
+    margin-top: 40%;
+    margin-left: 47%;
+}
+#f:link{
+    color: orangered;
+    text-decoration: none;
+}
+#f:visited{
+    color: orangered;
+    text-decoration: none;
+}
+#f:hover{
+    color: orangered;
+    text-decoration: none;
+    background-color: white;
+}

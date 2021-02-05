@@ -2,15 +2,26 @@
 p{
 text-align: center;
 margin-top: 150px;
-margin-left: 700px;
+margin-left: 710px;
 margin-right: 700px;
 font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 color:orangered;
 }
 textarea{
+    position: absolute;
+    top: 60%;
+    left: 35%;
     
-    margin-left: 710px;
-    margin-right: 700px;
     background-color: rgb(197, 197, 197);
     color: orangered;
+    font-size: 15pt;
+}
+#irjon{
+
+    margin-left: 675px;
+}
+#kuldes{
+    position:absolute;
+    left: 48%;
+    top:86%;
 }
