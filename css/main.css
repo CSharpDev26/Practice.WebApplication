@@ -4,7 +4,17 @@ body {background-color : rgb(0, 0, 0);
     padding: 0;
     color:orangered;
 }
-/* cim */
+html {
+	height: 100%;
+}
+#lablec{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem; 
+  border-top-style: solid;
+  border-top-color:orangered;
+}
 #focim{
      margin: 0;
      padding: 0;
@@ -23,7 +33,6 @@ body {background-color : rgb(0, 0, 0);
     border-bottom: black;
     border-style: none none solid none;
 } 
-/* menubar */
 ul {
     list-style-type: none;
     margin: 0;
@@ -32,11 +41,11 @@ ul {
     background-color: rgb(197, 197, 197);
   }
   
-  .menuelem {
+.menuelem {
     float: left;
   }
   
-  .menuelem a {
+.menuelem a {
     display: block;
     color: orangered;
     text-align: center;
@@ -45,10 +54,10 @@ ul {
     border-radius: 20px;
   }
   
-  .menuelem a:hover {
+.menuelem a:hover {
     background-color: rgb(0, 0, 0);
   }
-  #aktiv-oldal{
+#aktiv-oldal{
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
   }
@@ -91,16 +100,34 @@ display: inline-block;
 .legordulo:hover .legordulo-gomb {
     background-color: rgb(0, 0, 0);
 }
-.menu-egyben{
+/*.menu-egyben{
     position: fixed;
     top: 0;
     width: 100%;
-}
+}*/
 #kosar{
 float: right;
 margin: 0 0 0 0;
 padding-top: 5px;
 margin-right: 200px;
+}
+#kosar i{
+	font-size: 18px;
+}
+#kosar span{
+	display: inline-block;
+	text-align: center;
+	background-color: orangered;
+	border-radius: 50%;
+	color: white;
+	font-size: 12px;
+	line-height: 16px;
+	width: 20px;
+	height: 20px;
+	font-weight: bold;
+	position: absolute;
+	top: 80px;
+	right: 515px;
 }
 #bejelentkezes{
   float: right;
@@ -141,5 +168,204 @@ float: right;
  text-align: center;
  margin-right: 30px;
 }
-#mlogo{
+
+/*TERMEKEK*/
+.termekek-egyben {
+	width: 1200px;
+	margin: 0 auto;
+	margin-top:150px;
+	background-color:white;
 }
+.termekek-egyben h1{
+	border-bottom-style:solid;
+	border-bottom-color:orangered;
+	border-bottom-width:2pt;
+}
+.termekek-egyben p{
+	border-bottom-style:solid;
+	border-bottom-color:orangered;
+	border-bottom-width:1pt;
+}
+.termekek-egyben .termekek {
+	display: flex;
+	flex-flow:row;
+	flex-wrap: wrap;
+	padding: 40px 0 0 0;
+}
+.termekek-egyben .termekek .termek img {
+	transform: scale(1);
+	transition: transform 1s;
+	margin-left:15px;
+}
+.termekek-egyben .termekek .termek .nev {
+	display: block;
+	color: orangered;
+	padding: 20px 0 2px 0;
+}
+.termekek-egyben .termekek .termek .ar {
+	display: block;
+	color: orangered;
+	font-size:15px;
+}
+.termekek-egyben .termekek .termek .akcio_ar {
+	color: black;
+	text-decoration: line-through;
+	font-size:12px;
+}
+.termekek-egyben .termekek .termek:hover img {
+	transform: scale(1.05);
+	transition: transform 1s;
+}
+.termekek-egyben .termekek .termek:hover .nev {
+	text-decoration: underline;
+	color:blue;
+}
+.termekek-egyben .termekek .termek{
+	margin-left:20px;
+	text-decoration:none;
+	margin-bottom:20px;
+	display:flex;
+	flex-flow:column;
+	justify-content: center;
+	align-items: center;
+	flex: 1 0 21%;
+}
+.termekek-egyben .oldal-valto-gombok{
+	display:flex;
+	flex-flow:row;
+	align-items:center;
+	justify-content:center;
+}
+.termekek-egyben .oldal-valto-gombok .kovetkezo{
+	margin-left:10px;
+}
+.termekek-egyben .oldal-valto-gombok a{
+	color:blue;
+	text-decoration:none;
+}
+.termekek-egyben .oldal-valto-gombok a:hover{
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+/*TERMEK*/
+.termek-egyben {
+	display: flex;
+	background-color:white;
+	margin-top:10%;
+	margin-left:28%;
+	width:800px;
+	justify-content: center;
+	align-items: center;
+}
+.termek-egyben div{
+	padding-left:20px;
+}
+.termek-egyben .nev {
+	font-size: 34px;
+	font-weight: normal;
+	margin-left:40px;
+	padding: 20px 0 10px 0;
+}
+.termek-egyben .ar {
+	display: block;
+	font-size: 22px;
+	color: orangered;
+	margin-left:40px;
+}
+.termek-egyben .akcio_ar {
+	color: black;
+	text-decoration: line-through;
+	font-size: 18px;
+	padding-left: 5px;
+}
+.termek-egyben form {
+	display: flex;
+	flex-flow: column;
+	margin: 40px 0;
+}
+.termek-egyben img {
+	margin-left: 30px;
+}
+.termek-egyben form input[type="number"] {
+	width: 100px;
+	padding: 10px;
+	margin-bottom: 15px;
+	margin-left:40px;
+	border: 1px solid grey;
+	color: gray;
+	border-radius: 5px;
+}
+.termek-egyben form input[type="submit"] {
+	background: orangered;
+	border: 0;
+	color: white;
+	width: 122px;
+	padding: 12px 0;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-left:40px;
+}
+.termek-egyben form input[type="submit"]:hover {
+	background: blue;
+}
+.termek-egyben .leiras {
+	margin-left:25px;
+	margin-bottom:10px;
+}
+.termek-egyben .nagyitas:hover{
+	transform: scale(1.3);
+	transition: transform 0.5s;	
+}
+
+/*HASONLO TERMEKEK*/
+.hasonlo-termekek{
+	margin-top:30px;
+	display: flex;
+	flex-flow:row;
+	background-color:white;
+	margin-left:20%;
+	width:1200px;
+	justify-content: center;
+	align-items: center;
+}
+.hasonlo-termekek .hasonlo-termek{
+	display:flex;
+	flex-flow:row;
+	margin: 20px 0 10px 10px;
+	justify-content: center;
+	align-items: center;
+}
+.hasonlo-termekek .hasonlo-termek h3{
+	font-size:11pt;
+}
+.hasonlo-termekek .hasonlo-termek a{
+	display:flex;
+	flex-flow:column;
+	color:orangered;
+	text-decoration:none;
+	margin-left:20px;
+	padding: 0 0 0 0;
+	justify-content: center;
+	align-items: center;
+}
+.hasonlo-termekek .hasonlo-termek .ar{
+	font-size:10pt;
+}
+.hasonlo-termekek .hasonlo-termek .ar .akcio_ar{
+	font-size:7pt;
+	color: black;
+	text-decoration: line-through;
+}
+.hasonlo-termekek .hasonlo-termek a:hover{
+	text-decoration: underline;
+	color:blue;
+}
+.hasonlo-termekek .hasonlo-termek img:hover{
+	transform: scale(1.1);
+	transition: transform 0.5s;
+}
+

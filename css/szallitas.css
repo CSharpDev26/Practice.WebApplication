@@ -1,9 +1,11 @@
 @import "main.css";
 p {
 text-align: center;
-margin-top: 150px;
 margin-left: 700px;
 margin-right: 700px;
 font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 color:orangered;
+}
+#lablec{
+	position:relative;
 }

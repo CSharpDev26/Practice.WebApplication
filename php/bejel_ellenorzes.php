@@ -1,13 +1,7 @@
 <?php
+include 'funkciok.php';
+$conn = adatb_csatlakozas();
 session_start();
-$szerver = "localhost";
-$felhasz = "root";
-$jelszo = "";
-$adatb = "webapplication-database";
-$conn = new mysqli($szerver, $felhasz, $jelszo, $adatb);
-if ($conn->connect_error) {
-  die("A szerverhez való csatlakozás meghiúsult: " . $conn->connect_error);
-}
 if ( !isset($_POST['email'], $_POST['jelszo']) ) {
 	exit('Töltse ki mind a kettő mezőt!');
 }
@@ -25,17 +19,17 @@ if ($stmt->num_rows > 0) {
 		$_SESSION['email'] = $_POST['email'];
 		$_SESSION['id'] = $id;
 		$_SESSION['keresztnev'] = $keresztnev;
-		header('Location: ../index.php');
+		header('Location: ../index.php?oldal=fooldal');
 	} else {
 		$message = "Helytelen e-mail és/vagy jelszó!";
 		echo "<script type='text/javascript'>alert('$message');";
-		echo 'window.location.href = "http://localhost:8080/webapp/bejelentkezes.html"';
+		echo 'window.location.href = "http://localhost:8080/webapp/bejelentkezes.php"';
 		echo "</script>";
 	}
 } else {
 		$message = "E-mail cím nincs aktiválva vagy helytelen jelszó/e-mail cím!";
 		echo "<script type='text/javascript'>alert('$message');";
-		echo 'window.location.href = "http://localhost:8080/webapp/bejelentkezes.html"';
+		echo 'window.location.href = "http://localhost:8080/webapp/bejelentkezes.php"';
 		echo "</script>";
 }
 	$stmt->close();

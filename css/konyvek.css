@@ -1,0 +1,13 @@
+@import "main.css";
+
+body {
+	position: relative;
+	min-height: 100%;
+	margin: 0;
+	padding-bottom: 100px
+}
+#lablec{
+ position: absolute;
+  bottom: 0;
+  margin-left:600px;
+}

@@ -1,22 +1,100 @@
 @import "main.css";
-p{
-    margin-top: 10%;
-    margin-left: 47%;
+h1{
+margin-left:48%;	
 }
-#folyt{
-    margin-top: 40%;
-    margin-left: 47%;
+.kosar-egesz{
+	margin-left:30%;
+	margin-top:100px;
+	margin-bottom:100px;
+	background-color:white;
+	display:flex;
+	flex-flow:row;
+	align-items:center;
+	justify-content:center;
+	width: 800px;
 }
-#f:link{
-    color: orangered;
-    text-decoration: none;
+.kosar-egesz table {
+	width: 100%;
 }
-#f:visited{
-    color: orangered;
-    text-decoration: none;
+.kosar-egesz table thead td {
+	padding: 30px 10px 0;
+	border-bottom: 1px solid blue;
 }
-#f:hover{
-    color: orangered;
-    text-decoration: none;
-    background-color: white;
+.kosar-egesz table thead td:last-child {
+	text-align: right;
+}
+.kosar-egesz table tbody td {
+	padding: 20px 10px 0;
+}
+.kosar-egesz table tbody td:last-child {
+	text-align: right;
+}
+.kosar-egesz table .kosarkep {
+	width: 80px;
+}
+.kosar-egesz table .kosarkep:hover {
+	transform: scale(2);
+	transition: transform 2s;
+}
+.kosar-egesz table .eltavolitas {
+	color: blue;
+	font-size: 12px;
+	padding-top: 3px;
+}
+.kosar-egesz table .eltavolitas:hover {
+	text-decoration: underline;
+}
+.kosar-egesz table .ar {
+	color: gray;
+}
+.kosar-egesz table .mennyiseg {
+	color: gray;
+	text-align:center;
+}
+.kosar-egesz table a {
+	text-decoration: none;
+}
+
+.kosar-egesz table #nev {
+	text-decoration: none;
+	color: orangered;
+}
+
+.kosar-egesz table input[type="number"] {
+	width: 45px;
+	padding: 10px;
+	border: 1px solid orangered;
+	color: black;
+	border-radius: 5px;
+}
+.kosar-egesz .vegosszeg {
+	text-align: right;
+	padding: 30px 0;
+}
+.kosar-egesz .vegosszeg .szoveg {
+	padding-right: 40px;
+	font-size: 18px;
+	color:black;
+}
+.kosar-egesz .vegosszeg .ar {
+	font-size: 18px;
+	color:black;
+}
+.kosar-egesz .gombok {
+	text-align: right;
+	padding-bottom: 40px;
+}
+.kosar-egesz .gombok input[type="submit"]{
+	margin-left: 5px;
+	padding: 12px 20px;
+	border: 0;
+	background: gray;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.kosar-egesz .gombok input[type="submit"]:hover {
+	background: orangered;
 }

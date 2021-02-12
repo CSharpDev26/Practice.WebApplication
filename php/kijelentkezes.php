@@ -1,5 +1,8 @@
 <?php
 session_start();
-session_destroy();
-header('Location: ../index.php');
+unset($_SESSION['bejelentkezve']);
+unset($_SESSION['email']);
+unset($_SESSION['id']);
+unset($_SESSION['keresztnev']);
+header('Location: ../index.php?oldal=fooldal');
 ?>

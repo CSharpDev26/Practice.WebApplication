@@ -1,12 +1,6 @@
 <?php
-$szerver = "localhost";
-$felhasz = "root";
-$jelszo = "";
-$adatb = "webapplication-database";
-$conn = new mysqli($szerver, $felhasz, $jelszo, $adatb);
-if ($conn->connect_error) {
-  die("A szerverhez való csatlakozás meghiúsult: " . $conn->connect_error);
-}
+include 'funkciok.php';
+$conn = adatb_csatlakozas();
 if (isset($_GET['email'], $_GET['code'])) {
 	if ($stmt = $conn->prepare('SELECT * FROM felhasznalok WHERE email = ? AND aktivalokod = ?')) {
 		$stmt->bind_param('ss', $_GET['email'], $_GET['code']);

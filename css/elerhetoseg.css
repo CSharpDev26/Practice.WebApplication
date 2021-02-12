@@ -1,7 +1,6 @@
 @import "main.css";
 p{
 text-align: center;
-margin-top: 150px;
 margin-left: 710px;
 margin-right: 700px;
 font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -9,7 +8,7 @@ color:orangered;
 }
 textarea{
     position: absolute;
-    top: 60%;
+    top: 48%;
     left: 35%;
     
     background-color: rgb(197, 197, 197);
@@ -17,11 +16,11 @@ textarea{
     font-size: 15pt;
 }
 #irjon{
-
+	margin-top: 30px;
     margin-left: 675px;
 }
 #kuldes{
     position:absolute;
     left: 48%;
-    top:86%;
+    top:75%;
 }

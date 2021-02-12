@@ -1,0 +1,46 @@
+@import url("main.css");
+h3{
+    float: inline-end;
+    color: orangered;
+    text-align: center;
+}
+p{
+    text-align: center;
+    float: inline-end;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:orangered;
+}
+.akcios-termekek{
+	margin-top: 150px;
+	margin-left: 550px;
+	display:flex;
+	align-items: center;
+	justify-content:center;
+	background-color:white;
+	width:800px;
+}
+.akcios-termekek .termek{
+	margin-top:20px;
+	display:flex;
+	flex-flow:column;
+	align-items: center;
+	justify-content:center;
+	text-decoration: none;
+	color:orangered;
+	opacity:100%;
+}
+.akcios-termekek .termek:hover{
+	color:blue;
+}
+.akcios-termekek .termek .ar{
+	font-size:11pt;
+	color:orangered;
+}
+.akcios-termekek .termek .akcio_ar{
+	font-size:10pt;
+	color:black;
+	text-decoration: line-through;
+}
+.akcios-termekek .termek-rejtett{
+	display:none;
+}

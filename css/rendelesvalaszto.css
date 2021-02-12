@@ -1,1 +1,58 @@
 @import "main.css";
+.valaszto-osszefogo{
+	margin-top:250px;
+	margin-left:570px;
+	background-color:white;
+	display:flex;
+	flex-flow:row;
+	align-items: center;
+	justify-content:center;
+	width:800px;
+}
+.valaszto-osszefogo .szallitas .szallitasi-cim {
+		display:none;
+}
+.valaszto-osszefogo .szallitas .szallitasi-cim-lathato {
+	display:flex;
+	flex-flow:column;
+	align-items: center;
+	justify-content:center;
+	margin-right:30px;
+	color:blue;
+	/*background-color:yellow;*/
+	text-align:center;
+}
+.valaszto-osszefogo .szallitas .szallitasi-cim-lathato #szall-adat{
+	margin-left: 0px;
+}
+.valaszto-osszefogo .szallitas .szallitasi-cim-lathato p{
+	border-bottom: solid 2px blue;
+}
+.valaszto-osszefogo p{
+	font-weight:bold;
+	margin-left: 20px;
+}
+
+.valaszto-osszefogo .szallitas .szallitasi-cim-lathato .nincs-bejelentkezve {
+	text-align: center;
+	color: orangered;
+	text-decoration: none;
+	background-color:white;
+}
+.valaszto-osszefogo .szallitas .szallitasi-cim-lathato .nincs-bejelentkezve p {
+	border:none;
+	font-weight:normal;
+}
+.valaszto-osszefogo input[type="submit"]{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-left:20px;
+	padding: 8px 20px;
+	border: 0;
+	background: gray;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}

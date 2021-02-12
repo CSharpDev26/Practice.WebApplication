@@ -1,0 +1,99 @@
+@import "main.css";
+h1{
+margin-left:42%;	
+}
+.osszegzo-egesz{
+	margin-left:30%;
+	margin-top:80px;
+	margin-bottom:100px;
+	background-color:white;
+	display:flex;
+	flex-flow:row;
+	align-items:center;
+	justify-content:center;
+	width: 800px;
+}
+.osszegzo-egesz table {
+	width: 100%;
+}
+.osszegzo-egesz table thead td {
+	padding: 30px 10px 0;
+	border-bottom: 1px solid blue;
+}
+.osszegzo-egesz table thead td:last-child {
+	text-align: right;
+}
+.osszegzo-egesz table tbody td {
+	padding: 20px 10px 0;
+}
+.osszegzo-egesz table tbody td:last-child {
+	text-align: center;
+}
+.osszegzo-egesz table .kep {
+	width: 80px;
+}
+.osszegzo-egesz table .kep:hover {
+	transform: scale(2);
+	transition: transform 2s;
+}
+.osszegzo-egesz table .ar {
+	color: gray;
+}
+.osszegzo-egesz table .mennyiseg {
+	color: orangered;
+	text-align:center;
+}
+.osszegzo-egesz table a {
+	text-decoration: none;
+}
+
+.osszegzo-egesz table #nev {
+	text-decoration: none;
+	color: orangered;
+}
+
+.osszegzo-egesz table input[type="number"] {
+	width: 45px;
+	padding: 10px;
+	border: 1px solid orangered;
+	color: black;
+	border-radius: 5px;
+}
+.osszegzo-egesz .vegosszeg {
+	text-align:right;
+	padding: 30px 0;
+}
+.osszegzo-egesz .vegosszeg .szoveg {
+	margin-right:30px;
+	font-size: 18px;
+	color:black;
+}
+.osszegzo-egesz .vegosszeg .ar {
+	font-size: 18px;
+	color:black;
+}
+.osszegzo-egesz .vegosszeg .arvege {
+	font-size: 18px;
+	color:blue;
+}
+.osszegzo-egesz .osszegzes-kuldese {
+	text-align: right;
+	padding-bottom: 40px;
+}
+.osszegzo-egesz .osszegzes-kuldese input[type="submit"]{
+	margin-left: 5px;
+	padding: 12px 20px;
+	border: 0;
+	background: gray;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.osszegzo-egesz .osszegzes-kuldese input[type="submit"]:hover {
+	background: orangered;
+}
+.osszegzo-egesz .osszegzes-kuldese{
+	margin-right: 300px;
+}

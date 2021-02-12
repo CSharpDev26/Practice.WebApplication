@@ -9,8 +9,10 @@ bejel.style.display = "none";
 var kijel = document.getElementById("kijelentkezes");
 kijel.style.display = "block";
 
+if(id != 1 && id != 2){
 var profil = document.getElementById("profil");
 profil.style.display = "block";
+}
 
 var rendelesek = document.getElementById("rendelesek");
 var termekv = document.getElementById("termekv");
@@ -25,4 +27,8 @@ if(id == 1)
 {
 	termekv.style.display = "block";
 }
+}
+function nincs_bejelentkezve(){
+	var kosarj = document.getElementById("kosar_jelzo");
+	kosarj.style.right = "245px";
 }
