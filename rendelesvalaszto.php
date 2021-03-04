@@ -52,6 +52,7 @@ if($eredmeny->num_rows == 0){
 	echo '<div class = "nincs-bejelentkezve"><p>Nem található cím!</p></div>';
 }
 $cim = $eredmeny->fetch_assoc();
+$stmt->close();
 }
 ?>
 <?php if($cim != null): ?>
@@ -101,6 +102,5 @@ $cim = $eredmeny->fetch_assoc();
 <?php
 //lablec es kapcsolat lezaras
 lablec();
-$stmt->close();
 $conn->close();
 ?>
