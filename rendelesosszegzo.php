@@ -1,8 +1,15 @@
 <?php
+//rendeles vege oldal
+
+//alapfunkciok hasznalata
 include 'php/funkciok.php';
+//oldal fejlecenek beallitasa(css es js script fajl is)
 fejlec("rendelesosszegzo");
+//menu beallitasa (a szam csak az aktiv oldal jelzo)(0, akkor nincs aktiv)
 menu(0);
+//adatbazis csatlakozas a funkciok.php-bol
 $conn = adatb_csatlakozas();
+//javascript az ui megvaltoztatasahoz, ha bevagyunk jelentkezve
 if (isset($_SESSION['bejelentkezve'])) {
 echo "<script>";
 echo "bejelentkezve(\"".$_SESSION['keresztnev']."\",".$_SESSION['id'].");";
@@ -13,6 +20,7 @@ else{
 	echo "nincs_bejelentkezve();";
 	echo "</script>";
 }
+//kosarban levo termekek adatai, vegosszeg szamitas
 $kosarban_termekek = isset($_SESSION['kosar']) ? $_SESSION['kosar'] : array();
 $termekek = array();
 $vegoszeg = 0.00;
@@ -34,6 +42,7 @@ if ($kosarban_termekek) {
     }
 	}
 }
+//vegosszeg szamitas (szallitasi es fizetesi osszeg hozzaadas)
 if(isset($_POST['szallit']) && isset($_POST['fizet'])){
 	switch($_POST['szallit']){
 	case "csomagpont":
@@ -69,7 +78,7 @@ if(isset($_POST['szallit']) && isset($_POST['fizet'])){
 	}
 }
 ?> 
-
+<!-- rendeles ui -->
 <h1>Rendelés összegzése</h1>
 <div class="osszegzo-egesz">
     <form action="index.php?oldal=rendelesvege" method="post">
@@ -102,7 +111,7 @@ if(isset($_POST['szallit']) && isset($_POST['fizet'])){
         </table>
         <div class="vegosszeg">
 			<span class="szoveg">Szállítási költség (<?=$szallitasi_nev?>): </span>
-			<span class="ar"><?=number_format($szallitasi_koltseg / 1000, 3, ".", "");?> Ft</span><br>
+			<span class="ar"><?=$szallitasi_koltseg?> Ft</span><br>
 			<span class="szoveg">Fizetési költség (<?=$fizetesi_nev?>): </span>
 			<span class="ar"><?=$fizetesi_koltseg?> Ft</span><br>
             <span class="szoveg">Végösszeg: </span>
@@ -116,9 +125,9 @@ if(isset($_POST['szallit']) && isset($_POST['fizet'])){
         </div>
     </form>
 </div>
-
 <?php
-$conn->close();
+//lablec es kapcsolat lezaras
+lablec();
 $stmt->close();
-//lablec();
+$conn->close();
 ?>

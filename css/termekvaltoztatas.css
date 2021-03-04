@@ -1,0 +1,111 @@
+@import "main.css";
+.termekvalt-osszefogo{
+	margin-top:100px;
+	margin-left:500px;
+	background-color:white;
+	display:flex;
+	flex-flow:row;
+	align-items:center;
+	justify-content:center;
+	width:800px;
+}
+.termekvalt-osszefogo button{
+	margin-top:40px;
+	margin-bottom:60px;
+	margin-left:8px;
+	padding: 12px 20px;
+	border: 0;
+	background: gray;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.termekvalt-osszefogo button:hover{
+	background: orangered;
+}
+.termekhozzaadas-osszefogo{
+	display:none;
+}
+.termekszerkesztes-osszefogo{
+	display:none;
+}
+
+.termekhozzaadas-osszefogo-aktiv{
+	margin-top:30px;
+	margin-left:500px;
+	background-color:white;
+	display:flex;
+	flex-flow:column;
+	align-items:center;
+	justify-content:center;
+	width:800px;
+}
+.termekhozzaadas-osszefogo-aktiv form input[type = "submit"]{
+	margin-top: 25px;
+	margin-left: 100px;
+	padding: 12px 20px;
+	border: 0;
+	background: gray;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.termekhozzaadas-osszefogo-aktiv form input[type = "submit"]:hover{
+	background: orangered;	
+}
+.termekszerkesztes-osszefogo-aktiv{
+	margin-top:30px;
+	margin-left:500px;
+	background-color:white;
+	display:flex;
+	flex-flow:row;
+	align-items:center;
+	justify-content:center;
+	width:800px;
+}
+.termekszerkesztes-osszefogo-aktiv form {
+	margin-top:30px;	
+	margin-bottom:30px;
+}
+.termekszerkesztes-osszefogo-aktiv form input[type = "submit"]{
+	margin-top: 25px;
+	padding: 4px 15px;
+	border: 0;
+	background: gray;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.termekszerkesztes-osszefogo-aktiv form input[type = "submit"]:hover{
+	background: orangered;
+}
+.popupszoveg {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position:absolute;
+  margin-top:80px;
+}
+.popup-mutat {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}

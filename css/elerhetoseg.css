@@ -19,8 +19,47 @@ textarea{
 	margin-top: 30px;
     margin-left: 675px;
 }
-#kuldes{
-    position:absolute;
-    left: 48%;
-    top:75%;
+
+form {
+	margin-top:300px;	
+	margin-left:900px;
+}
+form input[type="submit"]{
+	margin-top: 10px;
+	padding: 12px 20px;
+	border: 0;
+	background: gray;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}
+form input[type="submit"]:hover{
+	background: orangered;
+}
+.popupszoveg {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position:absolute;
+  margin-left: 860px;
+  margin-top:-400px;
+}
+.popup-mutat {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }

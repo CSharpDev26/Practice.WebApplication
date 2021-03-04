@@ -1,36 +1,40 @@
 <?php
+//fooldal
+
+//alapfunkciok hasznalata
 include 'php/funkciok.php';
+//oldal fejlecenek beallitasa(css es js script fajl is)
 fejlec("fooldal");
+//menu beallitasa (a szam csak az aktiv oldal jelzo)
 menu(1);
+//adatbazis csatlakozas a funkciok.php-bol
+$conn = adatb_csatlakozas();
+//javascript az ui megvaltoztatasahoz, ha bevagyunk jelentkezve
 if (isset($_SESSION['bejelentkezve'])) {
-echo "<script>";
-echo "bejelentkezve(\"".$_SESSION['keresztnev']."\",".$_SESSION['id'].");";
-echo "</script>";
+	echo "<script>";
+	echo "bejelentkezve(\"".$_SESSION['keresztnev']."\",".$_SESSION['id'].");";
+	echo "</script>";
 }
 else{
 	echo "<script>";
 	echo "nincs_bejelentkezve();";
 	echo "</script>";
 }
-$conn = adatb_csatlakozas();
-$stmt = $conn->prepare('SELECT * FROM termekek WHERE akcio_nelkuli_ar > ? ORDER BY datum_hozzaadva LIMIT ?');
+//heti ajanaltok (akcios)
+$stmt = $conn->prepare('SELECT * FROM termekek WHERE akcio_nelkuli_ar > ? AND mennyiseg > ? AND kifutott != ? ORDER BY datum_hozzaadva LIMIT ?');
 $akcio_ar = 0;
+$menny = 0;
 $akcio_limit = 5;
-$stmt->bind_param('ii',$akcio_ar,$akcio_limit);
+$k = "igen";
+$stmt->bind_param('iisi',$akcio_ar,$menny,$k,$akcio_limit);
 $stmt->execute();
 $eredmeny = $stmt->get_result();
-$stmt->close();
-$conn->close();
+//szamlalo a javascripthez
 $szamlalo = 1;
-//$er = $eredmeny-> fetch_assoc();
-//echo $er['kep']."<br>";
-//$eredmeny->data_seek(0);
-//$er = $eredmeny-> fetch_assoc();
-//echo $er['kep'];
 ?>
-<!-- Adatok -->
 <h3> Üdvözöljük Webáruházunkban! </h3>
 <p> E-heti akcióink: </p>
+<!-- akcios termek osszefogva, 1 mutatatva, tobbi rejtve -->
 <div class = "akcios-termekek">
 			<?php foreach($eredmeny as $termek):?>
 			<?php if($szamlalo == 1): ?>
@@ -59,8 +63,11 @@ $szamlalo = 1;
 		<?php endif; ?>
 		<?php endforeach;?>
 </div>
+<!-- script meghivasa a fajlbol -->
 <script> akcioBetolto(); </script>
-<!--POP-UP ablakok?-->
 <?php
+//lablec es kapcsolat lezaras
 lablec();
+$stmt->close();
+$conn->close();
 ?>

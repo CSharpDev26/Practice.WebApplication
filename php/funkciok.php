@@ -1,4 +1,7 @@
 <?php
+//webapplikacio soran hasznalt alap funkciok
+
+//menu
 function menu ($aktual_oldal) {
 	$kosar_termek_szam = isset($_SESSION['kosar']) ? count($_SESSION['kosar']) : 0;
 echo <<<EOT
@@ -73,6 +76,7 @@ echo'</header>';
 echo'<main>';
 
 }
+//fejlec
 function fejlec($stringvaltozo){
 echo <<<EOT
 <!DOCTYPE html>
@@ -92,7 +96,7 @@ $stringalap = $stringalap.$stringvaltozo.".js";
 	echo "</head>";	
 	echo "<body>";
 }
-
+//lablec
 function lablec(){
 $evszam = date('Y');
 echo<<<EOT
@@ -105,7 +109,7 @@ echo<<<EOT
 </html>
 EOT;
 }
-
+//adatbazi csatlakozas
 function adatb_csatlakozas(){
 $szerver = "localhost";
 $felhasz = "root";

@@ -1,11 +1,6 @@
 @import "main.css";
 form{
 background-color: white;
-
-/* margin-right: 600px;
-margin-left: 600px;
-margin-top: 100px; */
-/* padding-top: 5%; */
 display: inline-block;;
 position: absolute;
 top:50%;
@@ -13,13 +8,33 @@ left: 40%;
 padding-left: 100px;
 padding-right: 100px;
 padding-top: 40px;
-padding-bottom: 40px;
+padding-bottom:20px;
+}
+form input[type = "submit"]{
+	margin-top: 10px;
+	margin-left: 20px;
+	padding: 12px 20px;
+	border: 0;
+	background: gray;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}
+form input[type = "submit"]:hover{
+	background:orangered;
 }
 #reg{
     color: orangered;
+	text-decoration:none;
+	margin-left:30px;
+}
+#reg:hover{
+	color: blue;
 }
 #sikertelen{
 	position: absolute;
-top:50%;
-left: 40%;
+	top:50%;
+	left: 40%;
 }

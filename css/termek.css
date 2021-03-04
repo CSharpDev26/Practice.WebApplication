@@ -1,5 +1,7 @@
 @import "main.css";
 #lablec{
+	position:relative;
+	margin-top:20px;
 }
 h2 {
 	margin-left: 850px;

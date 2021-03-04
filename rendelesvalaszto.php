@@ -1,9 +1,15 @@
 <?php
+//szallitasi es fizetesi adatok valasztasa rendeles soran
+
+//alapfunkciok hasznalata
 include 'php/funkciok.php';
+//oldal fejlecenek beallitasa(css es js script fajl is)
 fejlec("rendelesvalaszto");
+//menu beallitasa (a szam csak az aktiv oldal jelzo)(0, akkor nincs aktiv)
 menu(0);
+//adatbazis csatlakozas a funkciok.php-bol
 $conn = adatb_csatlakozas();
-$tovabb_kikapcsol = False;
+//javascript az ui megvaltoztatasahoz, ha bevagyunk jelentkezve
 if (isset($_SESSION['bejelentkezve'])) {
 echo "<script>";
 echo "bejelentkezve(\"".$_SESSION['keresztnev']."\",".$_SESSION['id'].");";
@@ -14,7 +20,10 @@ else{
 	echo "nincs_bejelentkezve();";
 	echo "</script>";
 }
+//gomb kikapcsolashoz
+$tovabb_kikapcsol = False;
 ?> 
+<!-- ui -->
 <div class = "valaszto-osszefogo"> 
 <form method = "POST" action = "index.php?oldal=rendelesosszegzo">
 <div class = "szallitas">
@@ -28,10 +37,12 @@ else{
 <div class = "szallitasi-cim">
 <?php
 $cim = null;
+//ha nincs bejelentkezve akkor nem engedjuk tovabb
 if(!isset($_SESSION['id'])) {
 	echo '<div class = "nincs-bejelentkezve"><p>Nincs bejelentkezve!</p></div>';
 	$tovabb_kikapcsol = True;
 }
+//hazhoz szallitas mutatasa
 else{
 $stmt=$conn->prepare('SELECT * FROM cimek WHERE fid = ?');
 $stmt->bind_param('i',$_SESSION['id']);
@@ -78,15 +89,18 @@ $cim = $eredmeny->fetch_assoc();
 </div>
 </form>
 </div>
-<?php
-lablec();
-?>
 <?php 
+	//gomb kikapcsolasa
 	if($tovabb_kikapcsol){
 	echo "<script>";
 	echo "tovabb();";
 	echo "</script>";
-	//pop-up!
 	echo "<p style = margin-left:860px;><br><br>Kérjük jelentkezen be!</p>";
 	}
+?>
+<?php
+//lablec es kapcsolat lezaras
+lablec();
+$stmt->close();
+$conn->close();
 ?>

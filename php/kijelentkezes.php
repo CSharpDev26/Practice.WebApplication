@@ -1,4 +1,6 @@
 <?php
+//kijelentkezes, egyeszeru unset
+
 session_start();
 unset($_SESSION['bejelentkezve']);
 unset($_SESSION['email']);

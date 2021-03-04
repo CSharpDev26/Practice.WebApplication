@@ -32,6 +32,7 @@ function nincs_bejelentkezve(){
 	var kosarj = document.getElementById("kosar_jelzo");
 	kosarj.style.right = "245px";
 }
+//gombok javascript (mutatas-elrejtes)
 function hazhoz_gomb(){
 	var szallitasi_cim = document.getElementsByClassName("szallitasi-cim");
 	szallitasi_cim[0].classList.add("szallitasi-cim-lathato");
@@ -41,6 +42,7 @@ function tovabb(){
 	var gomb = document.getElementById("rendeles_osszegzo");
 	if(gomb != null)
 	gomb.disabled = true;
+	gomb.style.opacity = 0.5;
 }
 function mas_gomb(){
 	var szallitasi_cim = document.getElementsByClassName("szallitasi-cim-lathato");

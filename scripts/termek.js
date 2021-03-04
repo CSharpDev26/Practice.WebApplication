@@ -32,3 +32,10 @@ function nincs_bejelentkezve(){
 	var kosarj = document.getElementById("kosar_jelzo");
 	kosarj.style.right = "245px";
 }
+//kosar gomb kikapcsolasa
+function kosarkikapcs(){
+	var gomb = document.getElementById("kosarbaid");
+	if(gomb != null)
+	gomb.disabled = true;
+	gomb.style.opacity = 0.5;
+}

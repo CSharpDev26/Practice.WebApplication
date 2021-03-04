@@ -1,1 +1,168 @@
 @import "main.css";
+h1{
+	margin-left:740px;
+}
+h2{
+	margin-left:870px;
+}
+#lablec{
+	position:relative;
+	margin-top:40px;
+}
+/*rendelesek*/
+#rend-teljesitve{
+	background:green;
+	color: black;
+}
+#rend-nincs-teljesitve{
+	background:yellow;
+	color: black;
+}
+#rend-lemondva{
+	background:red;
+	color: black;
+}
+.rendeles-kereso{
+	background:white;
+	width:200px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin-left:350px;
+	margin-bottom:20px;
+}
+.rendeles-kereso input{
+	border-color:orangered;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.rendelesek-osszefogo{
+	background:white;
+	width:1200px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin-left:350px;
+	margin-bottom:100px;
+}
+.rendelesek-osszefogo table{
+	margin-top:20px;
+	margin-bottom:20px;
+	border: solid 2pt orangered;
+	border-collapse: collapse;
+	text-align:center;
+}
+.rendelesek-osszefogo table thead th{
+	border-bottom: solid 1.5pt blue;
+	padding-left:10px;
+	margin-top:10px;
+}
+.rendelesek-osszefogo table tbody td{
+	border-bottom: solid 1pt blue;
+	padding-right:5px;
+	padding-left:5px;
+}
+#storol{
+	margin-left:30px;
+	margin-bottom:20px;
+	padding: 12px 20px;
+	border: 0;
+	background: gray;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}
+#storol:hover{
+	background:orangered;
+}
+#steljesit{
+	margin-left:400px;
+	margin-bottom:20px;
+	padding: 12px 20px;
+	border: 0;
+	background: gray;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}
+#steljesit:hover{	
+	background:orangered;
+}
+
+/*komment-szekcio*/
+.kommentek-osszefogo{
+	display:flex;
+	flex-flow:column;
+	align-items:center;
+	justify-content:center;
+	background:white;
+	width:1200px;
+	margin-left:350px;
+}
+.kommentek-osszefogo form table{
+	width:100%;
+	border: solid 2pt orangered;
+	border-collapse: collapse;
+	margin-top:20px;
+}
+.kommentek-osszefogo form table thead td {
+	padding: 30px 10px 0;
+	text-align: center;
+	border-bottom: solid 1.5pt blue;
+}
+.kommentek-osszefogo form table tbody td {
+	padding: 20px 10px 0;
+	text-align: center;
+	border-bottom: solid 1pt blue;
+}
+.kommentek-osszefogo form input[type = "submit"]{
+	margin:15px 0 5px 300px;
+	padding: 12px 20px;
+	border: 0;
+	background: gray;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.kommentek-osszefogo form input[type = "submit"]:hover{
+	background:orangered;
+}
+#olvasott{
+	background:green;
+	color: black;
+}
+#nem-olvasott{
+	background:red;
+	color: black;
+}
+.popupszoveg {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position:absolute;
+  margin-top:-70px;
+  margin-left:850px;
+}
+.popup-mutat {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}

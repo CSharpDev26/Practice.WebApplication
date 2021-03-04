@@ -1,12 +1,19 @@
 <?php
+//regisztracio oldala
+
+//alapfunkciok hasznalata
 include 'php/funkciok.php';
+//oldal fejlecenek beallitasa(css es js script fajl is)
 fejlec("regisztracio");
+//menu beallitasa (a szam csak az aktiv oldal jelzo)(0, akkor nincs aktiv)
 menu(0);
+//javascript az ui megvaltoztatasahoz, ha bevagyunk jelentkezve
 echo "<script>";
 echo "nincs_bejelentkezve();";
 echo "</script>";
-?>    
-<form action = "php/reg.php" method = "POST">
+?> 
+<!-- regisztracio form -->   
+<form action = "index.php?oldal=reg" method = "POST">
     <label>Vezetéknév</label><br>
     <input type="text" id = "veznev" name = "veznev"><br>
     <label>Keresztnév</label><br>
@@ -27,7 +34,7 @@ echo "</script>";
     <input type="number" id = "hazszam" name = "hazszam"><br> 
     <input type="submit" value="Regisztráció" name = "submit">
 </form>
-
 <?php
+//lablec
 lablec();
 ?>

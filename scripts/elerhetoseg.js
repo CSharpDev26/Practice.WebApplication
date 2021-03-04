@@ -31,3 +31,18 @@ function nincs_bejelentkezve(){
 	var kosarj = document.getElementById("kosar_jelzo");
 	kosarj.style.right = "245px";
 }
+//popup script
+function popUp(siker){
+  var popup = document.getElementById("popupid");
+  if(siker == "sikeres")
+	  popup.innerHTML = "Köszönjük a visszajelzést!";
+  else
+	  popup.innerHTML = "Nem sikerült/nem vagy bejelentkezve!";
+  popup.classList.toggle("popup-mutat");
+  var t = setTimeout(function(){ popUpIdozito() }, 3000);
+}
+function popUpIdozito(){
+	var popup = document.getElementById("popupid");
+	  popup.classList.toggle("popupszoveg");
+	  popup.innerHTML = "";
+}

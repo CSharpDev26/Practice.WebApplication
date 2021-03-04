@@ -1,12 +1,17 @@
+/*fo css fajl, minden oldal importalja*/
+/**/
+/*body allitasa*/
 body {background-color : rgb(0, 0, 0);
     font-family: cursive, 'Times New Roman', serif;
     margin: 0;
     padding: 0;
     color:orangered;
 }
+/*html allitasa*/
 html {
 	height: 100%;
 }
+/*lablec allitasa*/
 #lablec{
   position: absolute;
   bottom: 0;
@@ -14,7 +19,9 @@ html {
   height: 2.5rem; 
   border-top-style: solid;
   border-top-color:orangered;
+  text-align:center;
 }
+/*focim-alcim allitasa*/
 #focim{
      margin: 0;
      padding: 0;
@@ -33,6 +40,46 @@ html {
     border-bottom: black;
     border-style: none none solid none;
 } 
+/*ui-elemek uzemelteto oldalon*/
+#rendelesek{
+display: none;
+float: right;
+ padding-top: 10px;
+ text-align: center;
+ margin-right: 30px;
+}
+#termekv{
+display: none;
+float: right;
+ padding-top: 10px;
+ text-align: center;
+ margin-right: 30px;
+}
+#termekv a{
+	text-decoration:none;
+	color:blue;
+}
+#rendelesek a{
+	text-decoration:none;
+	color:blue;
+}
+#termekv a:visited{
+	text-decoration:none;
+	color:blue;
+}
+#rendelesek a:visited{
+	text-decoration:none;
+	color:blue;
+}
+#termekv a:hover{
+	text-decoration:underline;
+	color:orangered;
+}
+#rendelesek a:hover{
+	text-decoration:underline;
+	color:orangered;
+}
+/*lista elemek (menuhoz)*/
 ul {
     list-style-type: none;
     margin: 0;
@@ -40,10 +87,10 @@ ul {
     overflow: hidden;
     background-color: rgb(197, 197, 197);
   }
-  
+/*menu*/
 .menuelem {
     float: left;
-  }
+}
   
 .menuelem a {
     display: block;
@@ -100,11 +147,7 @@ display: inline-block;
 .legordulo:hover .legordulo-gomb {
     background-color: rgb(0, 0, 0);
 }
-/*.menu-egyben{
-    position: fixed;
-    top: 0;
-    width: 100%;
-}*/
+/*kosar gomb*/
 #kosar{
 float: right;
 margin: 0 0 0 0;
@@ -129,17 +172,20 @@ margin-right: 200px;
 	top: 80px;
 	right: 515px;
 }
+/*bejelentkezes gomb*/
 #bejelentkezes{
   float: right;
   margin: 0 15px 0 0;
   padding-top: 5px;
 }
+/*kijeletnkezes gomb*/
 #kijelentkezes{
 margin-right: 15px;
 padding-top: 5px;
 float: right;
 display: none;
 }
+/*udvozlo szoveg*/
 #udv{
   float: right;
   padding-top: 10px;
@@ -147,6 +193,7 @@ display: none;
   margin-right: 80px;
   display: none;
 }
+/*profil link*/
 #profil{
 display: none;
 float: right;
@@ -154,26 +201,39 @@ float: right;
  text-align: center;
  margin-right: 30px;
 }
-#rendelesek{
-display: none;
-float: right;
- padding-top: 10px;
- text-align: center;
- margin-right: 30px;
-}
-#termekv{
-display: none;
-float: right;
- padding-top: 10px;
- text-align: center;
- margin-right: 30px;
-}
-
 /*TERMEKEK*/
+.termek-keres{
+	display:flex;
+	flex-flow:row;
+	align-items:center;
+	justify-content:center;
+	margin-top:50px;
+	margin-left:560px;
+	background-color:white;
+	width:700px;
+}
+.termek-keres form{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.termek-keres form input[type = "submit"]{
+	margin-left: 5px;
+	padding: 4px 15px;
+	border: 0;
+	background: gray;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.termek-keres form input[type = "submit"]:hover{
+	background:orangered;
+}
 .termekek-egyben {
 	width: 1200px;
 	margin: 0 auto;
-	margin-top:150px;
+	margin-top:20px;
 	background-color:white;
 }
 .termekek-egyben h1{
@@ -206,6 +266,16 @@ float: right;
 	display: block;
 	color: orangered;
 	font-size:15px;
+}
+.termekek-egyben .termekek .termek .termek-raktaron {
+	display: block;
+	color: green;
+	font-size:20px;
+}
+.termekek-egyben .termekek .termek .termek-nincs-raktaron {
+	display: block;
+	color: red;
+	font-size:20px;
 }
 .termekek-egyben .termekek .termek .akcio_ar {
 	color: black;
@@ -283,6 +353,18 @@ float: right;
 	display: flex;
 	flex-flow: column;
 	margin: 40px 0;
+}
+.termek-egyben form .termek-raktaron{
+	display: block;
+	color: green;
+	font-size:20px;
+	margin-left:40px;
+}
+.termek-egyben form .termek-nincs-raktaron{
+	display: block;
+	color: red;
+	font-size:20px;
+	margin-left:40px;
 }
 .termek-egyben img {
 	margin-left: 30px;

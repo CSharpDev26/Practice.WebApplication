@@ -36,7 +36,7 @@ function nincs_bejelentkezve(){
 	var kosarj = document.getElementById("kosar_jelzo");
 	kosarj.style.right = "245px";
 }
-
+//akcio idozito allitas
 function akcioAllitas(){
 	var mutatott = document.getElementsByClassName("termek");
 	var rejtett = document.getElementsByClassName("termek-rejtett");

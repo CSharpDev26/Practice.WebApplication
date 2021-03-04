@@ -1,12 +1,33 @@
 @import url("main.css");
-p{
-	margin-top: 150px;
+#adataid{
+	margin-top: 100px;
 	margin-left: 900px;
 	font-size:20pt;
-	
 }
-table{
+.profil-osszefogo{
+	display:flex;
+	flex-flow:column;
+	width: 800px;
 	background-color: white;
-	margin-left: 650px;
 	margin-top: 40px;
+	margin-left:550px;
+	align-items: center;
+	justify-content:center;
+}
+.profil-osszefogo form{
+	margin-bottom:20px;
+}
+.profil-osszefogo form input[type="submit"]{
+	margin-left: 5px;
+	padding: 12px 20px;
+	border: 0;
+	background: gray;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.profil-osszefogo form input[type="submit"]:hover{
+	background: orangered;
 }

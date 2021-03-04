@@ -1,0 +1,112 @@
+@import "main.css";
+#lablec{
+	position:relative;
+	margin-top:20px;
+}
+.termek-kereso{
+	margin-top:200px;
+	margin-left:220px;
+	background-color:white;
+	display:flex;
+	flex-flow:row;
+	align-items:center;
+	justify-content:center;
+	width:1400px;
+}
+.termek-kereso table{
+	text-align:center;
+}
+.termek-kereso table input[type="number"] {
+	width: 100px;
+	padding: 10px;
+	border: 1px solid orangered;
+	color: black;
+	border-radius: 5px;
+}
+.termek-kereso table input[type="text"] {
+	width: 250px;
+	padding: 10px;
+	border: 1px solid orangered;
+	color: black;
+	border-radius: 5px;
+}
+.termek-kereso table textarea {
+	padding: 10px;
+	border: 1px solid orangered;
+	color: black;
+	border-radius: 5px;
+}
+.termek-kereso form input[type="submit"]{
+	margin-bottom:15px;
+	margin-left:600px;
+	padding: 12px 20px;
+	border: 0;
+	background: gray;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.termek-kereso form input[type="submit"]:hover{
+	background:orangered;
+}
+.termek-kereso form p{
+	margin-left:450px;
+}
+.kepfeltolto-osszefogo{
+	margin-top:20px;
+	margin-left:500px;
+	background-color:white;
+	display:flex;
+	flex-flow:column;
+	align-items:center;
+	justify-content:center;
+	width:800px;
+}
+.kepfeltolto-osszefogo form input[type="file"]{
+	margin-top:15px;
+}
+.kepfeltolto-osszefogo form input[type="submit"]{
+	margin-top:15px;
+	margin-bottom:15px;
+	margin-left:80px;
+	padding: 12px 20px;
+	border: 0;
+	background: gray;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.kepfeltolto-osszefogo form input[type="submit"]:hover{
+	background:orangered;
+}
+.popupszoveg {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position:absolute;
+  margin-top:-80px;
+  margin-left:850px;
+}
+.popup-mutat {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
