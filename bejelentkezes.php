@@ -8,9 +8,11 @@ fejlec("bejelentkezes");
 //menu beallitasa (a szam csak az aktiv oldal jelzo)(ha 0 akkor nincs aktiv oldal)
 menu(0);
 //javascript az ui megvaltoztatasa, nem vagyunk bejelentkezve
-echo "<script>";
-echo "nincs_bejelentkezve();";
-echo "</script>";
+	echo "<script>";
+	echo 'var x = window.matchMedia("(max-width: 900px)");';
+	echo "nincs_bejelentkezve(x);";
+	echo 'x.addListener(nincs_bejelentkezve);';
+	echo "</script>";
 ?>   
 <!-- bejelentkezes form -->
 	<form action = "php/bejel_ellenorzes.php" method = "POST">

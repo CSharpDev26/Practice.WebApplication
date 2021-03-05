@@ -15,7 +15,6 @@ webapp/kepek -> menu kepei
 webapp/scripts -> javascript fajlok
 webapp/termekek -> termek kepeinek mappaja
 webapp/szamlak -> az elkeszitett szamlak pdf-ei
-webapp/keszappkepek screenshot-ok az approl
 
 adatbazis szerkezet:
 webapplication-database

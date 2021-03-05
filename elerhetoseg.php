@@ -17,7 +17,9 @@ echo "</script>";
 }
 else{
 	echo "<script>";
-	echo "nincs_bejelentkezve();";
+	echo 'var x = window.matchMedia("(max-width: 900px)");';
+	echo "nincs_bejelentkezve(x);";
+	echo 'x.addListener(nincs_bejelentkezve);';
 	echo "</script>";
 }
 ?>
@@ -51,13 +53,13 @@ if(isset($_POST['komment']) && $_POST['komment'] != "" && isset($_SESSION['id'])
 	echo 'popUp("sikertelen");';
 	echo '</script>';
 	}
+	$stmt->close();
 }
 else{
 	echo '<script>';
 	echo 'popUp("sikertelen");';
 	echo '</script>';
 }
-$stmt->close();
 }
 ?>
 <?php

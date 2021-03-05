@@ -17,7 +17,9 @@ echo "</script>";
 }
 else{
 	echo "<script>";
-	echo "nincs_bejelentkezve();";
+	echo 'var x = window.matchMedia("(max-width: 900px)");';
+	echo "nincs_bejelentkezve(x);";
+	echo 'x.addListener(nincs_bejelentkezve);';
 	echo "</script>";
 }
 //gomb kikapcsolashoz
@@ -96,7 +98,7 @@ $stmt->close();
 	echo "<script>";
 	echo "tovabb();";
 	echo "</script>";
-	echo "<p style = margin-left:860px;><br><br>Kérjük jelentkezen be!</p>";
+	echo "<p id = 'kerjukjelent'><br><br>Kérjük jelentkezen be!</p>";
 	}
 ?>
 <?php

@@ -23,6 +23,7 @@ html {
 }
 /*focim-alcim allitasa*/
 #focim{
+     width: 100%;
      margin: 0;
      padding: 0;
      background-color : rgb(197, 197, 197);
@@ -31,6 +32,7 @@ html {
      color: orangered;
 }
 #alcim {
+	width: 100%;
     margin: 0;
     padding: 0;
     background-color : rgb(197, 197, 197);
@@ -91,7 +93,6 @@ ul {
 .menuelem {
     float: left;
 }
-  
 .menuelem a {
     display: block;
     color: orangered;
@@ -99,18 +100,17 @@ ul {
     padding: 14px 16px;
     text-decoration: none;
     border-radius: 20px;
-  }
-  
+} 
 .menuelem a:hover {
     background-color: rgb(0, 0, 0);
   }
 #aktiv-oldal{
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
-  }
+}
 .legrodulo{
-position: relative;
-display: inline-block;
+	position: relative;
+	display: inline-block;
 }
 .legordulo-gomb{
     background-color: rgb(197, 197, 197);
@@ -132,10 +132,10 @@ display: inline-block;
     border-radius: 20px;
 }
 .legordulo-tartalom-kategoriak a{
-  background-color: rgb(197, 197, 197);
-  color: orangered;
-  padding: 14px 16px;
-  display: block;
+	background-color: rgb(197, 197, 197);
+	color: orangered;
+	padding: 14px 16px;
+	display: block;
 }
 .legordulo-tartalom-kategoriak a:hover{
     background-color: rgb(0, 0, 0);
@@ -201,6 +201,7 @@ float: right;
  text-align: center;
  margin-right: 30px;
 }
+
 /*TERMEKEK*/
 .termek-keres{
 	display:flex;
@@ -451,3 +452,194 @@ float: right;
 	transition: transform 0.5s;
 }
 
+/*mobil css*/
+@media screen and (max-width: 900px) {
+
+#lablec{
+	font-size:10pt;
+}
+#focim{
+	font-size:15pt;
+}
+#focim img{
+	width: 20px;
+	height: 20px;
+}
+#alcim {
+	font-size:12pt;
+}
+.menuelem {
+	border-radius: 15px;
+}
+.menuelem a{
+	font-size:6pt;
+	padding: 10px 7px;
+}
+.legordulo-gomb{
+	font-size:6pt;
+	padding: 10px 7px;
+}
+.legordulo-tartalom-kategoriak a{
+	padding: 10px 7px;
+}
+.legordulo-tartalom-kategoriak{
+	min-width:60px;
+}
+#kosar{
+	margin-right:10px;
+}
+#bejelentkezes{
+	margin-right:10px;
+}
+#kosar img{
+	width: 20px;
+	height: 20px;
+}
+#bejelentkezes img{
+	width: 20px;
+	height: 20px;
+}
+#kosar span{
+	font-size:6pt;
+	width: 10px;
+	height: 10px;
+	line-height: 9px;
+	top: 48px;
+	left:235px;
+}
+#udv{
+	font-size:6pt;
+	margin-right:5px;
+}
+#kijelentkezes img{
+	width: 10px;
+	height: 10px;
+}
+#kijelentkezes{
+	margin-right:5px;
+}
+#profil{
+	margin-right:5px;
+	padding-top:2px;
+}
+#profil a{
+	font-size:6pt;
+}
+.termek-keres{
+	margin-left:0;
+	margin-top:20px;
+	width:100%;
+}
+.termek-egyben div{
+	padding-left:0;
+}
+.termek-keres form input[type = "submit"]{
+	padding: 4px 7px;
+}
+.termekek-egyben {
+	width:100%;
+}
+.termekek-egyben h1{
+	font-size:10pt;
+}
+.termekek-egyben p{
+	font-size:8pt;
+}
+.termekek-egyben .termekek {
+	padding:0;
+}
+.termekek-egyben .termekek .termek img {
+	width: 90px;
+	height: 100px;
+}
+.termekek-egyben .termekek .termek .nev {
+	font-size:8pt;
+}
+.termekek-egyben .termekek .termek .ar {
+	font-size:6pt;
+}
+.termekek-egyben .termekek .termek .termek-raktaron {
+	font-size:8pt;
+}
+.termekek-egyben .termekek .termek .termek-nincs-raktaron {
+	font-size:8pt;
+}
+.termekek-egyben .termekek .termek .akcio_ar {
+	font-size:5pt;
+}
+.termekek-egyben .oldal-valto-gombok{
+	font-size:9pt;
+}
+.termek-egyben {
+	width:100%;
+	margin-top:20px;
+	margin-left:0;
+}
+.termek-egyben .nev {
+	font-size:9pt;
+}
+.termek-egyben .ar {
+	font-size:7pt;
+}
+.termek-egyben .akcio_ar {
+	font-size:6pt;
+}
+.termek-egyben form {
+	margin:0;
+}
+.termek-egyben form .termek-raktaron{
+	font-size: 8pt;
+	margin-top:5px;
+	margin-left:55px;
+}
+.termek-egyben form .termek-nincs-raktaron{
+	font-size: 8pt;
+	margin-top:5px;
+	margin-left:55px;
+}
+.termek-egyben img {
+	width: 150px;
+	height: 180px;
+}
+.termek-egyben form input[type="number"] {
+	width: 68px;
+	padding: 5px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+.termek-egyben form input[type="submit"] {
+	width: 80px;
+	padding: 6px 0;
+	font-size: 9pt;
+	font-weight: bold;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-left:40px;	
+}
+.termek-egyben .leiras {
+	font-size: 8pt;
+	margin-left:40px;
+}
+.hasonlo-termekek{
+	width:100%;
+	margin-left:0;
+	margin-top:20px;
+}
+.hasonlo-termekek img{
+	width: 60px;
+	height: 70px;
+}
+.hasonlo-termekek .hasonlo-termek h3{
+	 font-size:6pt;
+}
+.hasonlo-termekek .hasonlo-termek a{
+	margin:0;
+}
+.hasonlo-termekek .hasonlo-termek .ar{
+	font-size:5pt;
+}
+.hasonlo-termekek .hasonlo-termek .ar .akcio_ar{
+	font-size:4pt;
+}
+
+}

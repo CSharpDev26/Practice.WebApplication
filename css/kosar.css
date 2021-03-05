@@ -98,3 +98,78 @@ margin-left:48%;
 .kosar-egesz .gombok input[type="submit"]:hover {
 	background: orangered;
 }
+
+/*mobil css*/
+@media screen and (max-width: 900px) {
+#lablec{
+	position:relative;
+	margin-top:20px;
+}
+h1{
+margin-left:45%;
+font-size:12pt;	
+}
+.kosar-egesz{
+	margin-left:0;
+	margin-top:50px;
+	margin-bottom:100px;
+	width: 100%;
+}
+.kosar-egesz table {
+	width: 100%;
+}
+.kosar-egesz table thead td {
+	padding: 10px 5px 0;
+	border-bottom: 0.5px solid blue;
+	text-align:center;
+	font-size:10pt;
+}
+.kosar-egesz table tbody td {
+	padding: 10px 5px 0;
+}
+.kosar-egesz table .kosarkep {
+	width: 100px;
+}
+.kosar-egesz table .eltavolitas {
+	font-size: 8pt;
+}
+.kosar-egesz table .ar {
+	font-size:8pt;
+	padding-right:10px;
+	text-align:center;
+}
+.kosar-egesz table thead td:last-child {
+	text-align: center;
+}
+.kosar-egesz table tbody td:last-child {
+	text-align: center;
+}
+.kosar-egesz table #nev {
+	font-size:9pt;
+}
+.kosar-egesz table input[type="number"] {
+	width: 20px;
+	padding: 10px;
+}
+.kosar-egesz .vegosszeg {
+	text-align: right;
+	padding: 10px 0;
+}
+.kosar-egesz .vegosszeg .szoveg {
+	padding-right: 40px;
+	font-size: 12pt;
+}
+.kosar-egesz .vegosszeg .ar {
+	font-size: 12pt;
+	margin-right:20px;
+}
+.kosar-egesz .gombok {
+	text-align: right;
+	padding-bottom: 20px;
+	padding-right:10px;
+}
+.kosar-egesz .gombok input[type="submit"]{
+	padding: 10px 18px;
+	font-size: 10pt;
+}
+}

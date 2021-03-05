@@ -1,4 +1,7 @@
 @import "main.css";
+#kerjukjelent{
+	margin-left:860px;
+}
 .valaszto-osszefogo{
 	margin-top:250px;
 	margin-left:570px;
@@ -32,7 +35,6 @@
 	font-weight:bold;
 	margin-left: 20px;
 }
-
 .valaszto-osszefogo .szallitas .szallitasi-cim-lathato .nincs-bejelentkezve {
 	text-align: center;
 	color: orangered;
@@ -55,4 +57,26 @@
 	font-weight: bold;
 	cursor: pointer;
 	border-radius: 5px;
+}
+/*mobil css*/
+@media screen and (max-width: 900px) {
+#lablec{
+	position:relative;
+	margin-top:20px;
+}
+.valaszto-osszefogo{
+	margin-top:100px;
+	margin-left:0;
+	width:100%;
+}
+.valaszto-osszefogo p{
+	margin-left:45px;
+}
+#kerjukjelent{
+	margin-left:28%;
+}
+.valaszto-osszefogo input[type="submit"]{
+	margin-left:60px;
+	font-size: 10pt;
+}	
 }

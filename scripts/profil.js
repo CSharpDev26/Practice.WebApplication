@@ -26,7 +26,3 @@ if(id == 1)
 	termekv.style.display = "block";
 }
 }
-function nincs_bejelentkezve(){
-	var kosarj = document.getElementById("kosar_jelzo");
-	kosarj.style.right = "245px";
-}

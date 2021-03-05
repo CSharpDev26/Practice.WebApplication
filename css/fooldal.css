@@ -11,13 +11,13 @@ p{
     color:orangered;
 }
 .akcios-termekek{
-	margin-top: 150px;
-	margin-left: 550px;
+	margin-top: 8%;
+	margin-left: 28%;
 	display:flex;
 	align-items: center;
 	justify-content:center;
 	background-color:white;
-	width:800px;
+	width:45%;
 }
 .akcios-termekek .termek{
 	margin-top:20px;
@@ -43,4 +43,33 @@ p{
 }
 .akcios-termekek .termek-rejtett{
 	display:none;
+}
+
+/*mobil css*/
+@media screen and (max-width: 900px) {
+	
+.akcios-termekek{
+	font-size:9pt;
+	width:100%;
+	margin-left: 0;
+	margin-top: 110px;
+}
+.akcios-termekek .termek .ar{
+	font-size:6pt;
+	margin-bottom:10px;
+}
+.akcios-termekek .termek .akcio_ar{
+	font-size:5pt;
+}
+.akcios-termekek img{
+	width: 100px;
+	height: 110px;
+}
+h3{
+	font-size:8pt;
+}
+p{
+	font-size:6pt;	
+}
+
 }

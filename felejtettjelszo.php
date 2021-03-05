@@ -8,9 +8,11 @@ fejlec("felejtettjelszo");
 //menu beallitasa (a szam csak az aktiv oldal jelzo)(0, akkor nincs aktiv)
 menu(0);
 //nincs bejelentkezve termeszetesen, ui
-echo "<script>";
-echo "nincs_bejelentkezve();";
-echo "</script>";
+	echo "<script>";
+	echo 'var x = window.matchMedia("(max-width: 900px)");';
+	echo "nincs_bejelentkezve(x);";
+	echo 'x.addListener(nincs_bejelentkezve);';
+	echo "</script>";
 ?> 
 <!-- form az uj jelszohoz -->
 <form action = "php/felejtettjkuldo.php" method = "post">

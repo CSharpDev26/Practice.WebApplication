@@ -1,5 +1,5 @@
 @import "main.css";
-p {
+#szallitasiszoveg {
 text-align: center;
 margin-left: 700px;
 margin-right: 700px;
@@ -8,4 +8,13 @@ color:orangered;
 }
 #lablec{
 	position:relative;
+	margin-top:10px;
+	text-align:center;
+}
+@media screen and (max-width: 900px) {
+	#szallitasiszoveg {
+		width: 100%;
+		margin: 0;
+		margin-top:20px;
+	}
 }

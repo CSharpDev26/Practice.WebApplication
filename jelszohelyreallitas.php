@@ -10,9 +10,11 @@ menu(0);
 //adatbazis csatlakozas a funkciok.php-bol
 $conn = adatb_csatlakozas();
 //nincs bejelentkezve termeszetesen, ui
-echo "<script>";
-echo "nincs_bejelentkezve();";
-echo "</script>";
+	echo "<script>";
+	echo 'var x = window.matchMedia("(max-width: 900px)");';
+	echo "nincs_bejelentkezve(x);";
+	echo 'x.addListener(nincs_bejelentkezve);';
+	echo "</script>";
 ?>
 <?php
 //ellenorizes, aktivalva van-e az e-mail, ha nincs akkor aktivalo link kuldese

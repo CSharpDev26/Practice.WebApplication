@@ -17,7 +17,9 @@ if (isset($_SESSION['bejelentkezve'])) {
 }
 else{
 	echo "<script>";
-	echo "nincs_bejelentkezve();";
+	echo 'var x = window.matchMedia("(max-width: 900px)");';
+	echo "nincs_bejelentkezve(x);";
+	echo 'x.addListener(nincs_bejelentkezve);';
 	echo "</script>";
 }
 //heti ajanaltok (akcios)

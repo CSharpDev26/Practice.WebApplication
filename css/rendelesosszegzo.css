@@ -97,3 +97,79 @@ margin-left:42%;
 .osszegzo-egesz .osszegzes-kuldese{
 	margin-right: 300px;
 }
+/*mobil css*/
+@media screen and (max-width: 900px) {
+#lablec{
+	position:relative;
+	margin-top:20px;
+}
+h1{
+margin-left:30%;
+font-size:12pt;	
+}
+.osszegzo-egesz{
+	margin-left:0;
+	width: 100%;
+	margin-top:50px;
+}
+.osszegzo-egesz table thead td {
+	padding: 20px 5px 0;
+	border-bottom: 0.5px solid blue;
+	text-align:center;
+}
+.osszegzo-egesz table thead td:last-child {
+	text-align: center;
+	padding-right:10px;
+}
+.osszegzo-egesz table tbody td {
+	padding: 20px 5px 0;
+}
+.osszegzo-egesz table tbody td:last-child {
+	text-align: center;
+	padding-right:10px;
+}
+.osszegzo-egesz table .kep {
+	width: 100px;
+}
+.osszegzo-egesz table .ar {
+	font-size: 10pt;
+	text-align:center;
+}
+.osszegzo-egesz table .mennyiseg {
+	font-size: 10pt;
+}
+.osszegzo-egesz table #nev {
+	font-size: 10pt;
+}
+.osszegzo-egesz table input[type="number"] {
+	width: 20px;
+	padding: 10px;
+}
+.osszegzo-egesz .vegosszeg {
+	text-align:right;
+	padding-bottom:20px;
+	padding-right:5px;
+}
+.osszegzo-egesz .vegosszeg .szoveg {
+	font-size: 9pt;
+}
+.osszegzo-egesz .vegosszeg .ar {
+	font-size: 10pt;
+	padding-right:10px;
+}
+.osszegzo-egesz .vegosszeg .arvege {
+	font-size: 10pt;
+	padding-right:10px;
+}
+.osszegzo-egesz .osszegzes-kuldese {
+	text-align: right;
+	padding-bottom: 40px;
+}
+.osszegzo-egesz .osszegzes-kuldese input[type="submit"]{
+	padding: 10px 18px;
+	font-size: 10pt;
+}
+.osszegzo-egesz .osszegzes-kuldese{
+	margin-right: 20px;
+}
+}

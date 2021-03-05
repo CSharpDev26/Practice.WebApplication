@@ -8,9 +8,11 @@ fejlec("regisztracio");
 //menu beallitasa (a szam csak az aktiv oldal jelzo)(0, akkor nincs aktiv)
 menu(0);
 //javascript az ui megvaltoztatasahoz, ha bevagyunk jelentkezve
-echo "<script>";
-echo "nincs_bejelentkezve();";
-echo "</script>";
+	echo "<script>";
+	echo 'var x = window.matchMedia("(max-width: 900px)");';
+	echo "nincs_bejelentkezve(x);";
+	echo 'x.addListener(nincs_bejelentkezve);';
+	echo "</script>";
 ?> 
 <!-- regisztracio form -->   
 <form action = "index.php?oldal=reg" method = "POST">

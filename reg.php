@@ -10,9 +10,11 @@ menu(0);
 //adatbazis csatlakozas a funkciok.php-bol
 $conn = adatb_csatlakozas();
 //javascript az ui megvaltoztatasahoz, ha bevagyunk jelentkezve
-echo "<script>";
-echo "nincs_bejelentkezve();";
-echo "</script>";
+	echo "<script>";
+	echo 'var x = window.matchMedia("(max-width: 900px)");';
+	echo "nincs_bejelentkezve(x);";
+	echo 'x.addListener(nincs_bejelentkezve);';
+	echo "</script>";	
 //adat ki van-e toltve
 if (!isset($_POST['veznev'], $_POST['keresztnev'], $_POST['email'], $_POST['jelszo'], $_POST['jelszom'], $_POST['irsz'], $_POST['varos'], $_POST['utca'], $_POST['hazszam'])) {
 	exit('Minden adatot ki kell tölteni!');
